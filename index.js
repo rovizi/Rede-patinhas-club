@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Conexão com o Banco de Dados
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Conectado ao Banco de Dados! ✅'))
   .catch((err) => console.error('Erro ao conectar ao banco:', err));
